@@ -1,2 +1,9 @@
-# An app cannot be a code owner, which is the whole point of this branch.
-* @russellboley-uipath
+# Path-scoped ownership. Last match wins, so the catch-all comes first.
+# An app cannot appear here at all: CODEOWNERS accepts users and teams only.
+*                       @greenlight-lab-rb/platform
+go.mod                  @greenlight-lab-rb/platform
+go.sum                  @greenlight-lab-rb/platform
+package.json            @greenlight-lab-rb/frontend
+requirements.txt        @greenlight-lab-rb/platform
+Dockerfile              @greenlight-lab-rb/security-review
+/.github/workflows/     @greenlight-lab-rb/security-review
