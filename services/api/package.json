@@ -2,5 +2,5 @@
   "name": "services-api",
   "version": "0.0.0",
   "private": true,
-  "dependencies": { "lodash": "4.17.20", "axios": "0.21.1" }
+  "dependencies": { "lodash": "4.17.20", "axios": "0.21.2" }
 }
