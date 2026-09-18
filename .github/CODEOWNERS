@@ -1,9 +1,9 @@
-# Path-scoped ownership. Last match wins, so the catch-all comes first.
-# An app cannot appear here at all: CODEOWNERS accepts users and teams only.
-*                       @greenlight-lab-rb/platform
-go.mod                  @greenlight-lab-rb/platform
-go.sum                  @greenlight-lab-rb/platform
-package.json            @greenlight-lab-rb/frontend
-requirements.txt        @greenlight-lab-rb/platform
-Dockerfile              @greenlight-lab-rb/security-review
-/.github/workflows/     @greenlight-lab-rb/security-review
+# Directory-scoped ownership. Last matching line wins, so the catch-all is
+# first and the most specific override is last.
+*                            @greenlight-lab-rb/platform
+/services/api/               @greenlight-lab-rb/platform
+/services/web/               @greenlight-lab-rb/frontend
+/infra/                      @greenlight-lab-rb/security-review
+# A nested override: this one file inside a frontend-owned directory is
+# owned by security instead. Last match wins, so it beats /services/web/.
+/services/web/package.json   @greenlight-lab-rb/security-review
