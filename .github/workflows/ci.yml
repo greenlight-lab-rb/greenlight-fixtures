@@ -1,0 +1,17 @@
+# Pinned to old action versions so the github-actions ecosystem has something
+# to raise. This workflow does not produce the required "ci/build" context on
+# purpose: that one is driven by hand through the commit status API.
+name: ci
+on:
+  pull_request:
+  push:
+    branches: ["fx/**"]
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v4
+        with:
+          go-version: "1.21"
+      - run: echo "fixture workflow, nothing to build"
