@@ -1,0 +1,5 @@
+# This file is on main only. Every path is owned by @greenlight-lab-rb/main-owners, which
+# appears nowhere else. If GitHub ever demands main-owners for a pull request
+# whose base is another branch, then CODEOWNERS is read from the default
+# branch. If it never does, it is read from the base branch.
+* @greenlight-lab-rb/main-owners
