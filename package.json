@@ -4,7 +4,7 @@
   "private": true,
   "description": "Fixture manifest. Deliberately outdated.\n\nundici is pinned one minor behind on purpose: it publishes often, so\nDependabot will offer a bump to a version only hours old, which is what\nexercises the package-age gate against a real registry.",
   "dependencies": {
-    "axios": "0.21.1",
+    "axios": "1.20.0",
     "express": "4.17.1",
     "lodash": "4.17.20",
     "undici": "8.10.2"
