@@ -1,0 +1,11 @@
+# Pinned by SHA to an old release so Dependabot raises a SHA-pinned bump.
+name: pinned
+on:
+  workflow_dispatch:
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: github/codeql-action/init@eb055d739abdc2e8de2e5f4ba1a8b246daa779aa # v3.26.0
+        with:
+          languages: go
