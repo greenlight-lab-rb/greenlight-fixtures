@@ -324,3 +324,11 @@ updates:
     open-pull-requests-limit: 3
     commit-message:
       prefix: "deps"
+  - package-ecosystem: "docker"
+    directory: "/pinned-image"
+    target-branch: "fx/open"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "deps"
