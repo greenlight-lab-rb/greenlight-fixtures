@@ -1,3 +1,3 @@
 # Pinned by digest to an old release so Dependabot raises a digest-pinned bump.
-FROM alpine:3.22.3@sha256:55ae5d250caebc548793f321534bc6a8ef1d116f334f18f4ada1b2daad3251b2
+FROM alpine:3.24.0@sha256:a2d49ea686c2adfe3c992e47dc3b5e7fa6e6b5055609400dc2acaeb241c829f4
 CMD ["true"]
